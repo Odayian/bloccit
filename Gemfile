@@ -47,6 +47,7 @@
    gem 'rspec-rails', '~> 3.0'
    gem 'rails-controller-testing'
    gem 'nyan-cat-formatter'
+   gem 'shoulda'
  end
  
  gem 'bootstrap-sass'
