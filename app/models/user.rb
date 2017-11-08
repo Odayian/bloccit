@@ -17,8 +17,8 @@ class User < ApplicationRecord
     
     
       def format_name
+        name_array = []
         if name
-            name_array = []
             name.split.each do |name_part|
                 name_array << name_part.capitalize
             end
