@@ -76,7 +76,5 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  
-  config.permit_all_parameters = true
-  config.action_controller.permit_all_parameters = true
+
 end
