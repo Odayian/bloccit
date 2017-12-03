@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   post 'users/confirm' => 'users#confirm' 
   get 'about' => 'welcome#about'
   
+  resources :sessions, only: [:new, :create, :destroy]
 
   root 'welcome#index'
   # The priority is based upon order of creation: first created -> highest priority.
