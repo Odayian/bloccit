@@ -60,9 +60,18 @@ puts "#{Post.count}"
 Post.find_or_create_by(title: "This is my title", body: "This is my body")
 puts "#{Post.count}"
  
-user = User.first
-user.update_attributes!(
-    email: 'bwdurbin@gmail.com',
+# Create an admin user
+admin = User.create!(
+    name:     'Admin User',
+    email:    'admin@example.com',
+    password: 'helloworld',
+    role:     'admin'
+)
+
+# Create a member
+member = User.create!(
+    name:     'Member User',
+    email:    'member@example.com',
     password: 'helloworld'
 )
  
