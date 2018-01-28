@@ -26,7 +26,7 @@ class User < ApplicationRecord
             end
         end
         self.name = name_array.join(" ")
-    end
+      end
     
 end
 
