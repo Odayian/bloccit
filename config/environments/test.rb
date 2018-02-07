@@ -42,4 +42,6 @@ Rails.application.configure do
   
   config.permit_all_parameters = true
   config.action_controller.permit_all_parameters = true
+  
+  config.action_mailer.default_url_options = { host: 'https://bloccit-odayian.c9users.io' }
 end
